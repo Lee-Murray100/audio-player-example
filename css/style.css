@@ -1,0 +1,92 @@
+
+body{ background:#fff; }
+#audio_player{ 
+    border:none; 
+    outline:none; 
+    display: flex;
+    justify-content: center;
+}
+#audio_controls{
+    padding:5px 10px;
+}
+
+#audio_controls button{ border:none; outline:none; cursor:pointer; display: block; margin: 20px 8px 0 0; float:left; }
+#audio_controls input{ outline: none; display: block; margin: 25px 15px 0 0; float: left;}
+button#playpausebtn{
+    background:url(../images/play.png) no-repeat;
+    background-size: 100%;
+    width:25px;
+    height:25px;
+}
+button#mutebtn{
+    background:url(../images/speaker.png) no-repeat;
+    background-size: 90%;
+    width:25px;
+    height:25px;
+}
+input#seekslider{
+    width:200px;
+}
+input#volumeslider{
+    width: 100px;
+}
+
+div#timebox{
+    margin: 22px 10px 0 0;
+    float: left;
+    padding:5px;
+    width:80px;
+    background:#000;
+    border-bottom: #ccc 1px solid;
+    text-align:center;
+    color: #09F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:11px;
+    border-radius: 15px;
+    vertical-align: top;
+}
+
+input[type='range'] {
+    -webkit-appearance: none !important;
+   /* margin-top:5px; */
+    padding:0px;
+    background: #6ADBFA;
+    height:13px;
+    /* border:#01B4E6 1px solid; */
+    border-bottom: #ccc 1px solid;
+    border-radius: 10px;
+    vertical-align: top;
+}
+input[type='range']::-ms-fill-lower  {
+    background:##6ADBFA;
+}
+input[type='range']::-ms-fill-upper  {
+    background:#6ADBFA;
+}
+input[type='range']::-moz-range-track {
+    border:none;
+    background: #6ADBFA;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: radial-gradient(#FFF, #333);
+    height:11px;
+    width:11px;
+    border-radius:100%;
+    cursor:pointer;
+}
+input[type='range']::-moz-range-thumb {
+    background: radial-gradient(#FFF, #333);
+    height:11px;
+    width:11px;
+    border-radius:100%;
+    cursor:pointer;
+}
+input[type='range']::-ms-thumb {
+    -webkit-appearance: none !important;
+    background: radial-gradient(#FFF, #333);
+    height:11px;
+    width:11px;
+    border-radius:100%;
+    cursor:pointer;
+}
